@@ -1,10 +1,61 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Craigs List</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<h1>Hello Work</h1>
+    <nav>
+        <div class="container new-wrapper">
+            <a href="/" class="brand-logo">Craig List</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="container">
+    <h1 style="text-align: center">What do you want to search for on Craig List?</h1>
+    <div class="row">
+        <div class="col s4">
+             <!--Promo Content 1 goes here -->
+            <div class="center">
+                <i class="large material-icons" style="color: #EE6E73" >flash_on</i>
+                <p>Fast craigslist web scraper</p>
+                <p class="light center">Scrape away right here with a beautiful GUI.</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <!-- Promo Content 2 goes here -->
+            <div class="center">
+                <i class="large material-icons" style="color: orange">camera</i>
+                <p>Filter your searches</p>
+                <p class="light center">I built in functionality to filter based on pictures</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <!-- Promo Content 3 goes here -->
+            <div class="center">
+                <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
+                <p>A much sexier front-end to Craigslist</p>
+                <p class="light center">I built this with &#10084;</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% block content %}
+
+{% endblock content %}
+
+
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
